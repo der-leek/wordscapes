@@ -9,4 +9,8 @@ class Board:
     def __str__(self) -> str:
         return "".join([node.value for node in self.board])
 
-    def __connect_nodes(self): ...
+    def __connect_nodes(self):
+        for i in self.board:
+            for j in self.board:
+                if i != j:
+                    i.connect_to_node(j)

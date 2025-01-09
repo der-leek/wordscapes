@@ -1,11 +1,11 @@
 class Node:
     def __init__(self, value: str):
         self.value = value
-        self.connections = dict()
+        self.connections = []
 
     def __str__(self) -> str:
-        return self.value
+        return f"{self.value}: {[node.value for node in self.connections]}"
 
-    def connect_node(self, node):
+    def connect_to_node(self, node):
         assert isinstance(node, Node)
-        self.connections[node.value] = node
+        self.connections.append(node)
