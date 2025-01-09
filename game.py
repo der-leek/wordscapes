@@ -1,3 +1,4 @@
+# Dictionary for this solver sourced from https://github.com/wordnik/wordlist
 from board import Board
 from solver import Solver
 
