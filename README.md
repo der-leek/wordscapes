@@ -1,0 +1,2 @@
+# Wordscapes Solver
+Run `python3 game.py` to solve wordscapes levels or generate anagrams in pure python. Each letter is represented as a node in a fully-connected graph. Given the board, the algorithm traverses the nodes recursively to find all possible words. The dictionary for this solver was sourced from [Wordnik](https://github.com/wordnik/wordlist).

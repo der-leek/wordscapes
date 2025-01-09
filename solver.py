@@ -52,10 +52,3 @@ class Solver:
             f"Searched {self.positions_searched} positions in {elapsed_time} seconds"
         )
         logging.debug(f"Found {len(self.words)} solutions")
-
-
-if __name__ == "__main__":
-    board = Board("PALETO")
-    solver = Solver(board, set())
-    solver.solve_board()
-    print(solver.words)
